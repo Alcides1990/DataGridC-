@@ -42,7 +42,6 @@ namespace WindowsFormsApp1
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.btnImprimir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.tablaProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -79,7 +78,6 @@ namespace WindowsFormsApp1
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(100, 20);
             this.txtCodigo.TabIndex = 3;
-            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             this.txtCodigo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodigo_KeyPress);
             // 
             // txtNombre
@@ -109,7 +107,6 @@ namespace WindowsFormsApp1
             this.tablaProducto.Size = new System.Drawing.Size(399, 150);
             this.tablaProducto.TabIndex = 6;
             this.tablaProducto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tablaProducto_CellClick);
-            this.tablaProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.c);
             // 
             // codigo
             // 
@@ -154,22 +151,11 @@ namespace WindowsFormsApp1
             this.lblTotal.Size = new System.Drawing.Size(0, 13);
             this.lblTotal.TabIndex = 9;
             // 
-            // btnImprimir
-            // 
-            this.btnImprimir.Location = new System.Drawing.Point(340, 106);
-            this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(75, 23);
-            this.btnImprimir.TabIndex = 10;
-            this.btnImprimir.Text = "Imprimir";
-            this.btnImprimir.UseVisualStyleBackColor = true;
-            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -203,7 +189,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.Button btnImprimir;
     }
 }
 
